@@ -1,0 +1,219 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #080914;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.app {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Sidebar */
+
+.sidebar {
+    width: 250px;
+    background: #10111f;
+    padding: 28px 20px;
+    border-right: 1px solid #25263b;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    color: #a78bfa;
+    font-size: 25px;
+}
+
+.tagline {
+    color: #85859b;
+    font-size: 12px;
+    margin-top: 8px;
+}
+
+.new-chat {
+    margin-top: 35px;
+    padding: 13px;
+    border: 1px solid #7049d8;
+    background: #21183d;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.new-chat:hover {
+    background: #35245d;
+}
+
+.sidebar-bottom {
+    margin-top: auto;
+    color: #77778d;
+    font-size: 12px;
+    line-height: 2;
+}
+
+/* Main content */
+
+.main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 25px 45px;
+}
+
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    color: #c6c6d5;
+    font-size: 14px;
+}
+
+.status {
+    color: #5de0a0;
+}
+
+/* Welcome section */
+
+.welcome {
+    text-align: center;
+    margin: auto auto 35px;
+}
+
+.cosmic-icon {
+    font-size: 45px;
+    color: #a78bfa;
+    margin-bottom: 15px;
+}
+
+.welcome h1 {
+    font-size: 34px;
+    margin-bottom: 12px;
+}
+
+.welcome p {
+    color: #b6b6ca;
+    margin-bottom: 8px;
+}
+
+.welcome .subtext {
+    color: #77778d;
+    font-size: 13px;
+}
+
+/* Chat area */
+
+.chat-area {
+    width: 100%;
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+/* Input */
+
+.input-area {
+    width: 100%;
+    max-width: 850px;
+    margin: 20px auto 0;
+    display: flex;
+    gap: 12px;
+    padding: 12px;
+    background: #151627;
+    border: 1px solid #34344e;
+    border-radius: 15px;
+}
+
+.input-area input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 15px;
+    padding: 8px;
+}
+
+.input-area button {
+    width: 42px;
+    height: 42px;
+    border: none;
+    border-radius: 10px;
+    background: #8055e8;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.input-area button:hover {
+    background: #9a75f5;
+}
+
+.footer-text {
+    text-align: center;
+    color: #68687d;
+    font-size: 11px;
+    margin-top: 14px;
+}
+
+/* Mobile layout */
+
+@media (max-width: 700px) {
+    .sidebar {
+        display: none;
+    }
+
+    .main-content {
+        padding: 22px 16px;
+    }
+
+    .welcome h1 {
+        font-size: 26px;
+    }
+}
+.planet-logo {
+    display: inline-flex;
+    width: 35px;
+    height: 35px;
+    align-items: center;
+    justify-content: center;
+    color: #b69aff;
+    border: 2px solid #8055e8;
+    border-radius: 50%;
+    font-size: 23px;
+    box-shadow: 0 0 15px #8055e866;
+    margin-right: 8px;
+}
+.cosmic-icon .planet-logo {
+    width: 75px;
+    height: 75px;
+    font-size: 45px;
+    margin: 0;
+    border-width: 3px;
+    box-shadow: 0 0 30px #8055e888;
+}
+.user-message {
+    background: #292044;
+    color: white;
+    padding: 14px 18px;
+    border-radius: 14px;
+    margin: 12px 0 12px auto;
+    max-width: 75%;
+    width: fit-content;
+    overflow-wrap: anywhere;
+}
+.bot-message {
+    background: #171b30;
+    color: #c9b8ff;
+    padding: 14px 18px;
+    border-radius: 14px;
+    margin: 12px auto 12px 0;
+    max-width: 75%;
+    width: fit-content;
+    overflow-wrap: anywhere;
+}
